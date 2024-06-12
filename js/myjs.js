@@ -63,6 +63,8 @@ buttonFinale.addEventListener('click', () =>{
        }
        console.log('risultato della funzione: ', risultato,', scelta giocatore: ', sceltaGiocatore,)
        
+    }else{
+        textRisultato.textContent = 'Hai scelto il numero sbagliato, ricomincia il gioco e seleziona il numero corretto.'
     }
     
 })
