@@ -8,6 +8,7 @@ let inputScelto = document.querySelector('.pariOdispari');
 let contBottoni = document.querySelector('.containerGioco');
 let inputUtente = document.querySelectorAll('.close.selezione');
 let buttonFinale = document.querySelector('#buttonGiocofinale');
+let textRisultato = document.querySelector('#risultatoFrase')
 
 // chiedo un input all'utente
 // let inputUtente = prompt('Scrivi una parola');
@@ -49,6 +50,21 @@ contBottoni.addEventListener('click', (event) => {
 
 })
 
+// prendo i dati dell'utente e gli restituisco il risultato
+buttonFinale.addEventListener('click', () =>{
+    let valore =  inputUtente[1].value 
+    if(valore <= 5 && valore >= 1){
+       let risultato = PariDispari(valore, 1, 5)
 
+       if(risultato === sceltaGiocatore){
+            textRisultato.textContent = 'Hai vinto!!'
+       }else{
+            textRisultato.textContent = 'Fai schifoo buuuuu!!'
+       }
+       console.log('risultato della funzione: ', risultato,', scelta giocatore: ', sceltaGiocatore,)
+       
+    }
+    
+})
 
 

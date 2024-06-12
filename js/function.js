@@ -23,6 +23,11 @@ function isParolaPalindroma(parola){
 
 
 function PariDispari(numeroUser, min, max){
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
+    let numComputer = Math.floor(Math.random() * (max - min + 1) ) + min;
+    if((numeroUser + numComputer) % 2 ===0){
+        return 'pari'
+    }else{
+        return 'dispari'
+    }
 }
 
