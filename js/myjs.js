@@ -1,5 +1,6 @@
+// variabili primo gioco
 let outPutUtente = document.querySelector('#messaggio');
-// secondo gioco
+// variabili secondo gioco
 let linkGioco = document.querySelector('#linkGioco');
 let fraseInizioGioco = document.querySelectorAll('.close.frase');
 let bottoni = document.querySelectorAll('.close.bottoni');
@@ -10,12 +11,14 @@ let inputUtente = document.querySelectorAll('.close.selezione');
 let buttonFinale = document.querySelector('#buttonGiocofinale');
 let textRisultato = document.querySelector('#risultatoFrase')
 
-// chiedo un input all'utente
-// let inputUtente = prompt('Scrivi una parola');
 
-// // creao la risposta
-// let risposta = isParolaPalindroma(inputUtente);
-// outPutUtente.append(risposta);
+// primo gioco
+// chiedo un input all'utente
+let inputUtenteParola = prompt('Scrivi una parola');
+
+// creao la risposta
+let risposta = isParolaPalindroma(inputUtenteParola);
+outPutUtente.append(risposta);
 
 
 
